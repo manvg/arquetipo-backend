@@ -1,0 +1,38 @@
+# Archivos y carpetas generados por Maven
+/target/
+/**/target/
+
+# Configuración de IDEs
+/.idea/
+/*.iml
+/.vscode/
+/*.classpath
+/*.project
+/.settings/
+
+# Archivos de sistema
+.DS_Store
+Thumbs.db
+*.log
+
+# Archivos temporales del sistema operativo
+*.swp
+*.swo
+*~
+
+# Archivos del entorno de compilación
+/.mvn/wrapper/maven-wrapper.jar
+/.mvn/wrapper/maven-wrapper.properties
+
+# Archivos de configuración específicos del usuario
+/settings.xml
+*.properties
+*.env
+
+# Archivos generados por herramientas de prueba o cobertura
+*.out
+*.hprof
+/jacoco.exec
+
+# Librerías descargadas localmente
+.m2/
