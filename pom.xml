@@ -12,14 +12,14 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.arquetipo.microservicio</groupId>
-    <artifactId>arquetipo-backend</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>arquetipo-backend</name>
-    <description>Arquetipo microservicio backend en Spring Boot</description>
+    <groupId>__groupId__</groupId>
+    <artifactId>__artifactId__</artifactId>
+    <version>__version__</version>
+    <packaging>jar</packaging>
+    <name>__artifactId__</name>
+    <description>Arquetipo generado basado en Spring Boot</description>
 
     <properties>
-        <!-- Configuración de Java 21 -->
         <java.version>21</java.version>
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
@@ -101,7 +101,13 @@
                     <target>${java.version}</target>
                 </configuration>
             </plugin>
+
+            <!-- Plugin para generar arquetipos -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-archetype-plugin</artifactId>
+                <version>3.3.1</version>
+            </plugin>
         </plugins>
     </build>
-
 </project>

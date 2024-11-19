@@ -1,0 +1,60 @@
+<archetype-descriptor xmlns="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0"
+                      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                      xsi:schemaLocation="http://maven.apache.org/plugins/maven-archetype-plugin/archetype-descriptor/1.0.0 https://maven.apache.org/xsd/archetype-descriptor-1.0.0.xsd">
+    <id>arquetipo-backend</id>
+    <sources>
+        <source>src/main/java</source>
+        <source>src/main/resources</source>
+    </sources>
+    <fileSets>
+        <!-- pom.xml -->
+        <fileSet>
+            <directory>.</directory>
+            <filtered>true</filtered>
+            <includes>
+                <include>pom.xml</include>
+            </includes>
+        </fileSet>
+
+        <!-- Docker files -->
+        <fileSet>
+            <directory>.</directory>
+            <filtered>false</filtered>
+            <includes>
+                <include>Dockerfile</include>
+                <include>docker-compose.yml</include>
+            </includes>
+            <excludes>
+                <exclude>**/.DS_Store</exclude>
+                <exclude>**/Thumbs.db</exclude>
+            </excludes>
+        </fileSet>
+
+        <!-- Application properties -->
+        <fileSet>
+            <directory>src/main/resources</directory>
+            <filtered>true</filtered>
+            <includes>
+                <include>application.properties</include>
+            </includes>
+        </fileSet>
+
+        <!-- Source files -->
+        <fileSet>
+            <directory>src/main/java</directory>
+            <filtered>true</filtered>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+
+        <!-- Test files -->
+        <fileSet>
+            <directory>src/test/java</directory>
+            <filtered>true</filtered>
+            <includes>
+                <include>**/*.java</include>
+            </includes>
+        </fileSet>
+    </fileSets>
+</archetype-descriptor>

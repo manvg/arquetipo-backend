@@ -26,8 +26,7 @@ Thumbs.db
 
 # Archivos de configuración específicos del usuario
 /settings.xml
-*.properties
-*.env
+/*.env
 
 # Archivos generados por herramientas de prueba o cobertura
 *.out
