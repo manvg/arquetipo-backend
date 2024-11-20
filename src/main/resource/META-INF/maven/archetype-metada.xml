@@ -32,13 +32,16 @@
             </excludes>
         </fileSet>
 
-        <!-- Application properties -->
+         <!-- Application properties -->
         <fileSet>
             <directory>src/main/resources</directory>
             <filtered>true</filtered>
             <includes>
                 <include>application.properties</include>
             </includes>
+            <excludes>
+                <exclude>archetype-metadata.xml</exclude>
+            </excludes>
         </fileSet>
 
         <!-- Source files -->
