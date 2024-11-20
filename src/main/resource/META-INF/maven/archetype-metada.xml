@@ -27,6 +27,8 @@
             <excludes>
                 <exclude>**/.DS_Store</exclude>
                 <exclude>**/Thumbs.db</exclude>
+                <exclude>**/*.swp</exclude>
+                <exclude>**/.*</exclude>
             </excludes>
         </fileSet>
 
@@ -41,16 +43,19 @@
 
         <!-- Source files -->
         <fileSet>
-            <directory>src/main/java</directory>
+            <directory>src/main/java/__packageInPathFormat__</directory>
             <filtered>true</filtered>
             <includes>
-                <include>**/*.java</include>
+                <include>controller/**/*.java</include>
+                <include>service/**/*.java</include>
+                <include>repository/**/*.java</include>
+                <include>model/**/*.java</include>
             </includes>
         </fileSet>
 
         <!-- Test files -->
         <fileSet>
-            <directory>src/test/java</directory>
+            <directory>src/test/java/__packageInPathFormat__</directory>
             <filtered>true</filtered>
             <includes>
                 <include>**/*.java</include>

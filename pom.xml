@@ -12,11 +12,11 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>__groupId__</groupId>
-    <artifactId>__artifactId__</artifactId>
-    <version>__version__</version>
+    <groupId>com.arquetipo.microservicio</groupId>
+    <artifactId>arquetipo-backend</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
-    <name>__artifactId__</name>
+    <name>arquetipo-backend</name>
     <description>Arquetipo generado basado en Spring Boot</description>
 
     <properties>
